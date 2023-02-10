@@ -29,3 +29,25 @@ header{
 
 /* FINE MAIN */
 
+
+/* RESPONSIVITA'*/
+
+/* TABLET VERSION */
+    /* Portfolio */
+@media screen and (max-width: 768px) {
+    .col-4{
+        width: 50%;
+    }
+  }
+
+/* IPHONE VERSION */
+    /* Portfolio */
+  @media screen and (max-width: 576px) {
+    .col-4{
+        width: 100%;
+    }
+    /* About */
+    .sm{
+        flex-direction: column;
+    }
+  }
