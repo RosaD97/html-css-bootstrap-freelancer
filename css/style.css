@@ -14,10 +14,6 @@ header{
     color: #fff;
     font-weight: 700;
 }
-.navbar button {
-    border-color: white;
-    color: #fff;
-}
 
 .navbar-toggler-icon {
     color: #fff;
@@ -44,19 +40,40 @@ header{
 }
 /* FINE Start Bootstrap */
 
-/* INIZIO About */
-
-/* FINE About */
+/* INIZIO Contact me */
+.ms_btn{
+    background-color: var(--first-color);
+    color: #fff;
+}
+.ms_btn:hover{
+    background-color: #47e3c4;
+}
+/* FINE Contact me  */
 
 /* FINE MAIN */
 
 /* INIZIO Footer */
+
+/* INIZIO Footer Top */
 .bg_color_footer_top{
     background-color: var(--third-color);
     color: #fff;
 }
+/* .ms_circle{
+    border: .0625rem solid #fff;
+    padding: 3px 10px;
+} */
+.ms_bootstrap_link{
+    color: var(--first-color);
+}
+/* FINE Footer Top */
+/* INIZIO Footer Bottom */
 .bg_color_footer_bottom{
     background-color: var(--second-color);
     color: #fff;
 }
+.fa-copyright{
+    font-size: .75rem;
+}
+/* FINE Footer Bottom */
 /* FINE Footer */
