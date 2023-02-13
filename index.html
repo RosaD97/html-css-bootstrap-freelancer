@@ -9,6 +9,9 @@
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,12 +19,42 @@
 
     <!-- Header -->
     <header class="d-flex align-items-center">
-        <nav class="d-flex container justify-content-between">
-            <div>
-                <h3>START</h3>
+        <nav class="container navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="ms_title_header navbar-brand" href="#">START BOOTSTRAP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="navbar-toggler-icon"></i></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-            <div>MENU</div>
-        </nav>
+          </nav>
+
     </header>
     <!-- /Header -->
 
@@ -29,11 +62,17 @@
     <main>
         <!-- Start Bootstrap -->
         <section class="ms_green d-flex flex-column justify-content-center">
-            <div class="container d-flex flex-column align-items-center">
+            <div class="container d-flex flex-column align-items-center pt-5 pb-4">
                 <img class="foto_avatar" src="img/avatar.svg" alt="foto avatar">
-                <h1>START</h1>
-                <span>stellina</span>
-                <span>web designer</span>
+                <h1>START BOOTSTRAP</h1>
+                <span class="ms_linea_star mb-3"><i class="fa-solid fa-star mx-3 align-bottom"></i></span>
+                <div>
+                    <ul class="d-flex">
+                        <li class="list-unstyled"><a class="text-decoration-none text-light" href="#">GRAPHIC ARTIST -</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none text-light ms-1" href="#">WEB DESIGNER -</a></li>
+                        <li class="list-unstyled"><a class="text-decoration-none text-light ms-1" href="#">ILLUSTRATOR</a></li>
+                    </ul>
+                </div>
             </div>
 
         </section>
@@ -42,54 +81,57 @@
         <!-- Portfolio -->
         <section class="container  d-flex align-items-center flex-column">
             <!-- Titolo Portfolio -->
-            <div>
-                <h2>PORTFOLIO</h2>
-                <span>stellina</span>
+            <div class="mt-4 mb-3 text-center">
+                <h2 class="fw-bolder">PORTFOLIO</h2>
+                <span class="ms_linea_star"><i class="fa-solid fa-star mx-3 align-bottom"></i></span>
             </div>
             <!-- Sezione foto -->
             <div class="row justify-content-between d-flex">
-                <img class="col-4 mb-4" src="img/cabin.png" alt="img cabina">
-                <img class="col-4 mb-4" src="img/cake.png" alt="img torta">
-                <img class="col-4 mb-4" src="img/circus.png" alt="img circo">
-                <img class="col-4 mb-4" src="img/game.png" alt="img gamepad">
-                <img class="col-4 mb-4" src="img/safe.png" alt="img cassa">
-                <img class="col-4 mb-4" src="img/submarine.png" alt="img sottomarino">
+                <img class="col-12 col-lg-6 col-xxl-4 rounded mb-4" src="img/cabin.png" alt="img cabina">
+                <img class="col-12 col-lg-6 col-xxl-4 rounded mb-4" src="img/cake.png" alt="img torta">
+                <img class="col-12 col-lg-6 col-xxl-4 rounded mb-4" src="img/circus.png" alt="img circo">
+                <img class="ccol-12 col-lg-6 col-xxl-4 rounded mb-4" src="img/game.png" alt="img gamepad">
+                <img class="col-12 col-lg-6 col-xxl-4 rounded mb-4" src="img/safe.png" alt="img cassa">
+                <img class="col-12 col-lg-6 col-xxl-4 rounded mb-4" src="img/submarine.png" alt="img sottomarino">
             </div>
         </section>
         <!--/ Portfolio -->
 
         <!-- About -->
         <section class="ms_green d-flex flex-column justify-content-center">
-            <div class="container d-flex flex-column align-items-center">
-                <div>
-                    <h2>ABOUT</h2>
-                    <span>stellina</span>
+            <div class="container d-flex flex-column align-items-center my-4">
+                <div class="text-center mb-3">
+                    <h2 class="fw-bolder">ABOUT</h2>
+                    <span class="ms_linea_star"><i class="fa-solid fa-star mx-3 align-bottom"></i></span>
                 </div>
                 <!-- Testo -->
-                <div class="d-flex sm">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis enim consequatur delectus similique, tempora quibusdam distinctio quisquam impedit voluptatum ratione, ducimus omnis quo, voluptates odio eveniet. Suscipit voluptatibus sed magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium laborum ullam autem aut modi! Obcaecati velit necessitatibus repellendus quos eligendi, facere natus molestias eum quis quasi exercitationem, id cupiditate! Assumenda.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque suscipit corporis voluptatibus debitis numquam ea, perspiciatis ipsam officiis eum ex voluptatum temporibus laborum distinctio aliquam vero libero et, esse praesentium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex sunt reiciendis molestiae voluptas fugiat placeat, iste veniam a, obcaecati aut corrupti illo aspernatur, doloribus accusamus ut quod ab illum dolorum.</p>
+                <div class="row container-sm">
+                    <p class="col-12 col-sm-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis enim consequatur delectus similique, tempora quibusdam distinctio quisquam impedit voluptatum ratione, ducimus omnis quo, voluptates odio eveniet. Suscipit voluptatibus sed magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium laborum ullam autem aut modi! Obcaecati velit necessitatibus repellendus quos eligendi, facere natus molestias eum quis quasi exercitationem, id cupiditate! Assumenda.</p>
+                    <p class="col-12 col-sm-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque suscipit corporis voluptatibus debitis numquam ea, perspiciatis ipsam officiis eum ex voluptatum temporibus laborum distinctio aliquam vero libero et, esse praesentium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex sunt reiciendis molestiae voluptas fugiat placeat, iste veniam a, obcaecati aut corrupti illo aspernatur, doloribus accusamus ut quod ab illum dolorum.</p>
                 </div>
                 <!-- Bottone -->
                 <div>
-                    <button>bottone</button>
-                </div>
+                    <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-download pe-1"></i>Download</button>                </div>
             </div>
         </section>
         <!-- /About -->
 
         <!-- Contact me -->
-        <section class="container d-flex align-items-center flex-column">
+        <section class="container d-flex align-items-center flex-column my-4">
             <div>
-                <h2>CONTACT ME</h2>
-                <span>stellina</span>
+                <h2 class="fw-bolder">CONTACT ME</h2>
+                <span class="ms_linea_star"><i class="fa-solid fa-star mx-3 align-bottom"></i></span>
             </div>
             <!-- Sezione Dati -->
-            <div class="d-flex flex-column">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
+            <div class="d-flex flex-column mt-3">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                  </div>
             </div>
             <div>
                 <hr>

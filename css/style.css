@@ -10,6 +10,19 @@ header{
     color: #fff;
     height: 5.625rem;
 }
+.ms_title_header{
+    color: #fff;
+    font-weight: 700;
+}
+.navbar button {
+    border-color: white;
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
 /* FINE HEADER */
 
 /* INIZIO MAIN */
@@ -21,11 +34,19 @@ header{
 .foto_avatar{
     height: 16.25rem;
 }
+.ms_linea_star::after{
+    content: "___________";
+    font-weight: 900;
+}
+.ms_linea_star::before{
+    content: "___________";
+    font-weight: 900;
+}
 /* FINE Start Bootstrap */
 
-/* INIZIO Portfolio */
+/* INIZIO About */
 
-/* FINE Portfolio */
+/* FINE About */
 
 /* FINE MAIN */
 
@@ -39,26 +60,3 @@ header{
     color: #fff;
 }
 /* FINE Footer */
-
-
-/* RESPONSIVITA'*/
-
-/* TABLET VERSION */
-    /* Portfolio */
-@media screen and (max-width: 768px) {
-    .col-4{
-        width: 50%;
-    }
-  }
-
-/* IPHONE VERSION */
-    /* Portfolio */
-  @media screen and (max-width: 576px) {
-    .col-4{
-        width: 100%;
-    }
-    /* About */
-    .sm{
-        flex-direction: column;
-    }
-  }
