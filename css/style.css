@@ -59,10 +59,24 @@ header{
     background-color: var(--third-color);
     color: #fff;
 }
-/* .ms_circle{
-    border: .0625rem solid #fff;
-    padding: 3px 10px;
-} */
+.ms_circle {
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid white;
+    padding: 5px 8px;
+  }
+  .ms_circle_g {
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid white;
+    padding: 5px 5px;
+  }
+  .ms_circle_f {
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid white;
+    padding: 5px 10px;
+  }
 .ms_bootstrap_link{
     color: var(--first-color);
 }
